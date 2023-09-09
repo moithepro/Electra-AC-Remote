@@ -3,11 +3,13 @@
 #include "irslinger.h"
 #include "electraAcRemoteEncoder.h"
 
+#define OUT_PIN 20
+
 int main (int argc,char *argv[])
 {
     int i = 0,acState,acMode,acSwing;
     struct airCon newAc;
-    uint32_t outPin = 20; //Pin number according to BCM
+    uint32_t outPin = OUT_PIN; //Pin number according to BCM
     int frequency = 38000;
     double dutyCycle = 0.5;
     int *codes = NULL;
