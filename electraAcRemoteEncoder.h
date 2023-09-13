@@ -1,12 +1,15 @@
 #ifndef ELECTRA_AC_REMOTE_ENCODER_H
 #define ELECTRA_AC_REMOTE_ENCODER_H
 
+// Constants for masking different properties of the air conditioner state
+
 #define FULL_STATE_MASK 0x200000002
 #define ON_STATE_MASK   0x1
 #define FAN_MASK        0x3
 #define SWING_MASK      0x3
 #define MODE_MASK       0x7
 #define TEMP_MASK       0xF
+
 #define COOL            0x1
 #define HEAT            0x2
 #define SWING_OFF       0x0
@@ -19,6 +22,8 @@
 #define DATA_BITS_LENGTH 34
 
 typedef enum acParameters {fan,mode,temp,swing} acParameter;
+
+// Structure to hold air conditioner state and encoding information
 
 typedef struct airCon {
     uint64_t fullState;
