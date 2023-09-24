@@ -52,6 +52,7 @@ Dependencies and Usage:
 	* Arguments: Transmitter GPIO BCM pin, Fan, Mode, Temperature, State, Swing
 	
 	  For example: `./electraAcRemote 17 2 COOL 25 ON SWING_OFF`
+   
 	(IMPORTANT!!!!!!!!!) 
 	 * The ON state is used for changing settings while the AC is already up and running
 	 * The OFF state turns the AC on and off just like the power button on an actual remote
