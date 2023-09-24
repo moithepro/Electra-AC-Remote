@@ -51,7 +51,7 @@ Dependencies and Usage:
 * Once this is done you're free to test your AC remote:
 	* Arguments: Transmitter GPIO BCM pin, Fan, Mode, Temperature, State, Swing
 	
-	  For example: `./electraAcRemote 17 2 COOL 25 ON SWING_OFF`
+	  For example: `./electraAcRemote 17 2 COOL 25 ON SWING_OFF` \
    
 	(IMPORTANT!!!!!!!!!) 
 	 * The ON state is used for changing settings while the AC is already up and running
